@@ -52,7 +52,7 @@ function updateLinks() {
     // Remove '+' from WhatsApp number if present
     const cleanWhatsapp = finalWhatsapp.replace('+', '');
     
-    const defaultMessage = encodeURIComponent('Olá, quero saber mais sobre o VaiDarBoa!');
+    const defaultMessage = encodeURIComponent('Olá, preciso de ajuda!');
     whatsappLink.href = `https://wa.me/${cleanWhatsapp}?text=${defaultMessage}`;
     registerButton.onclick = function() {
         window.location.href = `https://app.77xbrasil.com.br/pr/${finalPromoterCode}`;
